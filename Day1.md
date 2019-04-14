@@ -37,6 +37,14 @@ Console.WriteLine("Hello C# World~");
 HelloCsharpWorld 폴더를 만들어주고 폴더 안에 내용을 넣어준다
 
 
+## 메소드 설명
+```c#
+Console.WriteLine("{0} {1}", args[0], args.Length);
+```
+args[0]이 {0}에, args.Length가 {1}에 출력된다는 의미를 갖는다.
+{0}은 문자열의 형태로, {1}은 정수 형태로 출력!
 
-개발툴에 쓴 것처럼 나오는 건 언제봐도 신기한 듯 하다 =▽=
+
+
+개발툴에 쓴 것처럼 나오는 건 언제봐도 신기한 듯 하다 =▽= 
 
