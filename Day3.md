@@ -58,3 +58,31 @@ Console.WriteLine(b1); // True
 Console.WriteLine(b2); // False
 Console.WriteLine(b1 && b2); // False (곱하는 느낌)
 ```
+
+---
+값 저장 형식
+
+* 스택(stack) 메모리 공간 사용
+  * FIFO
+  * int, float, double, long, short와 같은 것들
+* 힙(heap) 메모리 공간 사용
+   * Garbage Collector (GC) : 메모리 공간에 더이상 사용하지 않는 변수가 있을 때 정리해주는 기능
+```c#
+int a= 55; // 값 형식 변수, 중괄호가 끝나는 시점에 메모리에서 제거
+object b = "MIRIM"; // 참조 형식 변수, GC 메모리에서 제거
+object r = 100; // 참조 형식 변수, GC 메모리에서 제거
+Console.WriteLine("{1} {0} {2}", a, b, c);
+```
+
+```c#
+
+sbyte e = 127;
+float g = 3.141592f;
+
+e = (sbyte)d; // 2바이트 자료형인 short를 sbyte 형으로 강제 형변환
+f = (int)g; // float형 -> int형으로 강제 형변환, 소수점
+Console.WriteLine("{0} {1}", g, f);
+```
+
+
+
