@@ -34,7 +34,16 @@ enum Human { Warrior, Wizard = 55, Thief }
 
 ```c#
 var x = 55; // 알아서 컴파일 내에서 int로 인식
-var x = -55.7; // 알아서 컴파일 내에서 double로 인식
+// var x = -55.7; // 알아서 컴파일 내에서 double로 인식
+var y = "MIRIM LEE";
+var z = 19;
+
 Console.WriteLine(x);
 /* 반드시 var 키워드의 변수를 선언할 때 초기화가 같이 이루어져야 한다 !!! */
+
+Console.WriteLin("{0} {1} {2}",x ,y ,z); // 55 MIRIM LEE 19
+// 한 번에 출력
+
+Console.WriteLin("{0} {1} {2}",x.GetType() ,y.GetType() ,z.GetType());
+// System.String System.Double System.String System.Int32
 ```
