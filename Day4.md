@@ -52,3 +52,25 @@ Console.WriteLin("{0} {1} {2}",x.GetType() ,y.GetType() ,z.GetType());
 매우매우 졸립고 자고 싶은 마음이 1등이지만 그래도 참아본다
 
 
+연산자
+> 산술 : +, -, *, /, %
+```c#
+int x = 5;
+int y = 7;
+z = (x>y) ? "x가 큰 수 ": "y가 큰 수");
+// 첫 번째 피연산자에는 희생양..
+ !!!!!!
+```
+
+> 논리
+```c#
+Consolw ("{0} {1}", !false, !true); // True False
+
+b = (x != y ) && (x < y);
+// && 논리 AND 연산, 양쪽 모두의 값이 true일때만 전체가 TRUE
+b = (x != y) || (x > y);
+// || 논리 OR 연산, 양쪽 중 한 쪽 값만 TRUE거나 양쪽 다 TRUE이면 전체가 TRUE
+Console.WriteLine("{0} {1} {2}", (x != y), (x > y), b);
+
+
+
