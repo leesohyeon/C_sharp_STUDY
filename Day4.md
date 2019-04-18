@@ -47,3 +47,8 @@ Console.WriteLin("{0} {1} {2}",x ,y ,z); // 55 MIRIM LEE 19
 Console.WriteLin("{0} {1} {2}",x.GetType() ,y.GetType() ,z.GetType());
 // System.String System.Double System.String System.Int32
 ```
+
+---
+매우매우 졸립고 자고 싶은 마음이 1등이지만 그래도 참아본다
+
+
