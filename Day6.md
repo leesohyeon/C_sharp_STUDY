@@ -11,7 +11,7 @@ Console.WriteLine("이곳은 출력이 될까용?"); // 출력, if문의 참 거
 ```
 ---
 
-> if else
+> if / else
 ```c#
 if(x > y) 
   Console.WriteLine("if문이 참이면 실행!!"); 
@@ -21,7 +21,7 @@ Console.WriteLine("이곳은 출력이 될까용?"); // 출력
 ```
 ---
 
-> if, else if
+> if / else if / else
 ```c#
 if(x > y) 
   Console.WriteLine("if문이 참이면 실행!!");
