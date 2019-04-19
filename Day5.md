@@ -12,7 +12,7 @@ int y = 55;
 // 0000 0000 0000 0000 0000 0000 0011 0111(2) -> 37 (16)
 
 Console.WriteLine("{0} {1}", x, y);
-Console.WriteLine("{0:X8} {1:X8}", x, y); // 16진수 8자리로 출력
+Console.WriteLine("{0:X8} {1:X8}", x, y); // 16진수를 8자리로 출력
 
 
 Console.WriteLine(x << 2);
@@ -24,7 +24,7 @@ Console.WriteLine(x >> 2);
 ```
 ---
 
-* &, | 연산자
+* &, |, ^ 연산자
 ```c#
 int x = 61; 
 // 0000 0000 0000 0000 0000 0000 0011 1101(2) -> 3D (16)
@@ -37,11 +37,21 @@ Console.WriteLine(x & y);
 // bit and 연산 후 메모리에 저장되는 값
 Console.WriteLine("{0:X8}", x&y); // 00000035
 
-
 Console.WriteLine(x | y);
 // |를 한다면
 // 0000 0000 0000 0000 0000 0000 0011 1111(2) -> 63 (10), 3F (16)
 // bit or 연산 후 메모리에 저장되는 값
 Console.WriteLine("{0:X8}", x|y); // 00000035
+
+Console.WriteLine(x ^ y); // 배타적 논리합
+// ^를 한다면
+// 0000 0000 0000 0000 0000 0000 0000 1010(2) -> 10 (10), A (16)
+// bit Xor 연산 후 메모리에 저장되는 값
+Console.WriteLine("{0:X8}", x^y); // 00000035
+
+// 1111 1111 1111 1111 1111 1111 1100 0010(2) 1의 보수 (음수 표현)
+Console.WirteLine(~x); // -62 (10)
+Console.WriteLine("{0:38}", ~x); // FFFFFFC2 (16)
+
 
 ```
