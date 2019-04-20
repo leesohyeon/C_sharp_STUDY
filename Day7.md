@@ -93,6 +93,22 @@ foreach문은 초기값이나 조건문이 없이 간단하게 실행
 
 > break
 ```c#
+int[] y = {55, 7, 31, -9};
 
+for (int j = 0; i < 4; j++)
+{
+  if (j == 2) break; // 반복문 탈출
+  Console.WriteLine(y[j]); // 55 7
+}
 ```
+
 > continue
+```c#
+int[] y = {55, 7, 31, -9};
+
+for (int j = 0; i < 4; j++)
+{
+  if (j == 2) continue; // 2인 부분 실행x, 패스하고 실행
+  Console.WriteLine(y[j]); // 55 7 -9
+}
+```
