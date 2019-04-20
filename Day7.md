@@ -44,6 +44,7 @@ for (int i = 1; i < 10; i++)
 ```
 
 > while
+괄호 안의 조건이 맞지 않으면 한 번도 실행이 안될 수 있다
 ```c#
   while(i < 10)
   {
@@ -52,10 +53,46 @@ for (int i = 1; i < 10; i++)
   }
 ```
 무한루프를 멈추려면 `ctrl + C`를 눌러 멈춘다!
-> do while
 
-> for each
+> do while
+조건이 맞지 않더라도 반드시 처음 한 번은 실행!
+```c#
+string x;
+
+do
+{
+  Console.WriteLine("반복문 연습중...");
+  x = Console.ReadLine();
+} while(x != "q"); // 입력되는 문자열이 q가 아닌 동안 반복
+// 대문자 Q를 넣는다 해도 종료가 되는 것은 X!
+
+/*
+대문자 Q도 실행되도록 하기 위해서는
+while ((x != "q") && (x != "Q"));
+*/
+
+> foreach : 배열과 같은 컬렉션 개체를 다룰 때 사용되는 반복문
+컬렉션에 대한 개념알기
+컬렉션 : 
+```c#
+string[] x = {"짜장면", "짬뽕", "탕수육"};
+int[] y = {55, 7, 31, -9};
+
+foreach (string i in x)
+{
+  Console.WriteLine(i); // 짜장면 짬뽕 탕수육
+}
+
+foreach (int i in y)
+{
+  Console.WriteLine(i); // 55 7 31 -9
+}
+```
+for문은 초기값을 설정, 초기값부터 시작하며 조건문을 설정해서 실행
+foreach문은 초기값이나 조건문이 없이 간단하게 실행
 
 > break
+```c#
 
+```
 > continue
