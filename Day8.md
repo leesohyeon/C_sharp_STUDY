@@ -68,6 +68,33 @@ class Dog
 }
 ```
 
+### Recurisive call 
+```c#
+class Chap0428
+{
+  static int Fact1(int n) // 팩토리얼 계산 메소드1 (반복문 이용)
+  {
+    int s = 1;
+    for(int i=n; i>0; i--) // 팩토리얼 반복문
+    {
+      s = s * i;
+    }
+  }
+  static int Fact2(int n) // 팩토리얼 계산 메소드2 (재귀호출 이용)
+  {
+    if(n <= 1) return 1;
+    return n * Fact2(n-1) ; // 자기자신 호출
+  }
+  static void Main(string[] args)
+  {
+    Console.WriteLine(Fact1(5)); // 120
+    Console.WriteLine(Fact2(5)); // 120
+  }
+  
+}
+
+
+```
 
 
 
